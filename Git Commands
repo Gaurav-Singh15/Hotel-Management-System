@@ -1,0 +1,6 @@
+1. Git Clone - Clones a repo to your local machine
+2. Git Status  - Checks if there are any untracked/modified files
+3. Git add - Adds the file to be committed
+3. Git commit -m "your message" - Commits the file to the Git Project
+4. Git push - Pushes the Commit to Github so that we can see our project online as well
+5. Git pull - If there are already existing changes, first get them into your local copy
