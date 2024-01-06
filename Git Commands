@@ -8,6 +8,6 @@
 8. Git branch Branch_Name - To create a new Branch (will be created from latest commit)
 9. Git checkout Branch_name - Changing the current branch to specified branch
 10. Git fetch --prune -> Fetch the latest changes and removes any deleted references (branch).
-11. Git branch -d branchName -> deleting branch manually.
+11. Git branch -d branchName -> deleting branch manually in my local.
 
 
