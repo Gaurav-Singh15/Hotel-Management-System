@@ -1,10 +1,9 @@
 1. Git Clone - Clones a repo to your local machine
 2. Git Status  - Checks if there are any untracked/modified files
 3. Git add - Adds the file to be committed
-3. Git commit -m "your message" - Commits the file to the Git Project
-4. Git push - Pushes the Commit to Github so that we can see our project online as well
-5. Git pull - If there are already existing changes, first get them into your local copy
-
+4. Git commit -m "your message" - Commits the file to the Git Project
+5. Git push - Pushes the Commit to Github so that we can see our project online as well
+6. Git pull - If there are already existing changes, first get them into your local copy
 7. Git branch - To check in which branch we are currently working/ list all the branches
 8. Git branch Branch_Name - To create a new Branch (will be created from latest commit)
 9. Git checkout Branch_name - Changing the current branch to specified branch
