@@ -1,25 +1,42 @@
-import logo from './logo.svg';
+import react, {Component} from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className='parentDiv'>
+        <div id="Header">
+          <h1>Hotel Management System</h1>
+        </div>
+        <div className='containerAloo'>
+          <div id="username" className='label'>
+            <div >
+              Username
+            </div>
+            <div>
+              <input id='uname' type='text' placeholder='Username' />
+            </div>
+          </div>
+          <div id="Password" className='label'>
+            <div >
+              Password
+            </div>
+            <div>
+              <input id='pwd' type='password' placeholder='Password' />
+            </div>
+          </div>
+          <div id="submit_reset">
+            <button className='btn btn-success m-3'>Login</button>
+            <button className='btn btn-primary '>Reset</button>
+          </div>
+          <div id="signup" className='whiteColor'>
+            <p>New to Aloo? <a href='www.google.com' target='_blank'>Sign Up here</a></p>
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;
