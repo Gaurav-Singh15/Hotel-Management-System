@@ -1,42 +1,40 @@
 import react, {Component} from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import Signup from './Signup';
+import LoginForm from './Components/LoginForm';
+
+
+
 
 class App extends Component {
+
+  handleOnClick = (event) => {
+    event.preventDefault()
+    console.log("called");
+    this.setState({path : '/Signup'})
+  }
+
+  constructor(){
+    super()
+    this.state = {
+      path : ''  
+    };
+  }
+  
   render() {
     return (
-      <div className='parentDiv'>
-        <div id="Header">
-          <h1>Hotel Management System</h1>
-        </div>
-        <div className='containerAloo'>
-          <div id="username" className='label'>
-            <div >
-              Username
-            </div>
-            <div>
-              <input id='uname' type='text' placeholder='Username' />
-            </div>
+        <div className='parentDiv'>
+          <div id="Header">
+            <h1>Hotel Management System</h1>
           </div>
-          <div id="Password" className='label'>
-            <div >
-              Password
-            </div>
-            <div>
-              <input id='pwd' type='password' placeholder='Password' />
-            </div>
-          </div>
-          <div id="submit_reset">
-            <button className='btn btn-success m-3'>Login</button>
-            <button className='btn btn-primary '>Reset</button>
-          </div>
-          <div id="signup" className='whiteColor'>
-            <p>New to Aloo? <a href='www.google.com' target='_blank'>Sign Up here</a></p>
+          <div className='containerAloo'>
+            {this.state.path === '/Signup'?<Signup/> : <LoginForm onClick={this.handleOnClick}/> }
           </div>
         </div>
-      </div>
-    );
+    )
   }
 }
+
 
 export default App;
